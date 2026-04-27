@@ -18,17 +18,17 @@ export const MagneticButton = ({ children, href, primary }) => {
       style={{ x: sx, y: sy, display: "inline-block" }} whileTap={{ scale: 0.96 }}>
       <motion.div
         whileHover={primary
-          ? { boxShadow: "0 0 32px rgba(56,189,248,0.45)" }
-          : { borderColor: "rgba(56,189,248,0.5)", color: "#e5e7eb" }}
+          ? { boxShadow: "0 0 32px var(--primary-glow)", scale: 1.02 }
+          : { borderColor: "var(--primary)", color: "var(--text)" }}
         style={{
-          padding: "0.82rem 2rem", borderRadius: 10, cursor: "pointer",
-          fontWeight: 600, fontSize: "0.85rem", letterSpacing: "0.04em", transition: "all 0.25s",
+          padding: "0.82rem 2rem", borderRadius: 12, cursor: "pointer",
+          fontWeight: 700, fontSize: "0.85rem", letterSpacing: "0.04em", transition: "all 0.25s",
           ...(primary ? {
-            background: "linear-gradient(135deg, #38bdf8, #818cf8)",
-            color: "#080c10", boxShadow: "0 0 20px rgba(56,189,248,0.25)",
+            background: "var(--primary)",
+            color: "white", boxShadow: "0 0 20px var(--primary-glow)",
           } : {
-            background: "transparent", color: "#9ca3af",
-            border: "1px solid rgba(56,189,248,0.22)",
+            background: "transparent", color: "var(--text-dim)",
+            border: "1px solid var(--border)",
           }),
         }}
       >{children}</motion.div>

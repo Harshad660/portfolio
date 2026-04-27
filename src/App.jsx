@@ -11,24 +11,24 @@ import { Contact } from "./components/sections/Contact";
 
 const Footer = () => (
   <footer style={{
-    borderTop: "1px solid rgba(255,255,255,0.07)",
-    padding: "2.2rem clamp(1.5rem, 5vw, 6rem)",
+    borderTop: "1px solid var(--border)",
+    padding: "3rem clamp(1.5rem, 5vw, 6rem)",
     display: "flex", justifyContent: "space-between", alignItems: "center",
-    flexWrap: "wrap", gap: "1.2rem",
-    background: "linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0))",
+    flexWrap: "wrap", gap: "1.5rem",
+    background: "var(--bg)",
   }}>
-    <div style={{ display: "flex", alignItems: "center", gap: "0.8rem" }}>
+    <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
       <div style={{
-        width: 30, height: 30, borderRadius: 10,
-        background: "linear-gradient(135deg, #38bdf8, #818cf8)",
+        width: 32, height: 32, borderRadius: 10,
+        background: "var(--primary)",
         display: "flex", alignItems: "center", justifyContent: "center",
-        fontSize: "0.65rem", fontWeight: 800, color: "#080c10",
-        boxShadow: "0 0 20px rgba(56,189,248,0.3)",
+        fontSize: "0.7rem", fontWeight: 800, color: "white",
+        boxShadow: "0 0 20px var(--primary-glow)",
       }}>HS</div>
-      <span className="mono" style={{ fontSize: "0.7rem", color: "#94a3b8", letterSpacing: "0.12em" }}>Harshad Siddheshwar</span>
+      <span className="mono" style={{ fontSize: "0.75rem", color: "var(--text)", fontWeight: 600, letterSpacing: "0.05em" }}>Harshad Siddheshwar</span>
     </div>
-    <span className="mono" style={{ fontSize: "0.65rem", color: "#64748b", letterSpacing: "0.14em" }}>
-      Full-Stack MERN Developer · Building scalable systems
+    <span className="mono" style={{ fontSize: "0.7rem", color: "var(--text-dim)", letterSpacing: "0.1em" }}>
+      © {new Date().getFullYear()} · MERN Stack Developer · Solapur, India
     </span>
   </footer>
 );
