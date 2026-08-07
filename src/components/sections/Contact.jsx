@@ -1,12 +1,9 @@
-import { Glow, FadeUp, SectionLabel, WireframeSphere } from "../ui/Common";
+import { Glow, FadeUp, SectionLabel } from "../ui/Common";
 
 export const Contact = () => (
   <section id="contact" style={{ position: "relative", padding: "9rem 0 11rem", overflow: "hidden" }}>
     <Glow x="45%" y="35%" size={900} color="var(--primary-glow)" />
     <Glow x="75%" y="70%" size={420} color="var(--primary-glow)" />
-    <div className="float-2" style={{ position: "absolute", right: "6%", top: "18%", width: "clamp(120px, 16vw, 200px)", opacity: 0.06, pointerEvents: "none" }}>
-      <WireframeSphere style={{ width: "100%", height: "100%" }} />
-    </div>
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 clamp(1.5rem, 5vw, 6rem)", textAlign: "center" }}>
       <FadeUp style={{ display: "flex", justifyContent: "center" }}>
         <SectionLabel num={8} label="Contact" />

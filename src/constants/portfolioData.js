@@ -26,6 +26,17 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "BloodConnect",
+    tag: "Full Stack · MERN",
+    tagColor: "#ef4444",
+    desc: "A real-time blood donation and locator platform connecting voluntary donors with patients and hospitals. Built with geographical donor mapping, secure OTP verified donation requests, and a live component availability dashboard.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Leaflet.js", "JWT"],
+    period: "Sep 2024 – Nov 2024",
+    highlight: true,
+    github: true,
+    githubUrl: "https://github.com/Harshad660/BloodConnect.git"
+  },
+  {
     title: "Job Application Website",
     tag: "Full Stack · MERN",
     tagColor: "#38bdf8",

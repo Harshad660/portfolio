@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
-import { Glow, WireframeSphere, HexGrid } from "../ui/Common";
+import { Glow, HexGrid } from "../ui/Common";
 import { MagneticButton } from "../ui/MagneticButton";
 
 export const Hero = () => {
@@ -19,9 +19,6 @@ export const Hero = () => {
     <section style={{ position: "relative", minHeight: "100vh", display: "flex", alignItems: "center", overflow: "hidden" }}>
       <Glow x="70%" y="30%" size={720} color="var(--primary-glow)" />
       <Glow x="20%" y="70%" size={500} color="var(--primary-glow)" />
-      <div className="float-1" style={{ position: "absolute", right: "4%", top: "8%", width: "clamp(180px, 28vw, 380px)", pointerEvents: "none", opacity: 0.10 }}>
-        <WireframeSphere style={{ width: "100%", height: "100%" }} />
-      </div>
       <div className="float-3" style={{ position: "absolute", left: "-2%", bottom: "4%", width: "clamp(120px, 18vw, 260px)", pointerEvents: "none", opacity: 0.05 }}>
         <HexGrid style={{ width: "100%", height: "100%" }} />
       </div>
